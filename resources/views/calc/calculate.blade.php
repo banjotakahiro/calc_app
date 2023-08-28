@@ -13,7 +13,7 @@
         @endphp
     @elseif ($operator == 'subtraction')
         @php
-            $answer = $value_1 + $value_2;
+            $answer = $value_1 - $value_2;
         @endphp
     @elseif ($operator == 'multiplication')
         @php

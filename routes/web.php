@@ -21,3 +21,8 @@ Route::get('/calcs/{value_1}/{operator}/{value_2}', function ($value_1,$operator
             ];
     return view('calc.calculate',$data);
 });
+
+Route::get('/calcs', function () {
+
+    return view();
+});
