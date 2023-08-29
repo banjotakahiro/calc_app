@@ -23,6 +23,10 @@
         @php
             $answer = $value_1 / $value_2;
         @endphp
+    @else
+        @php
+            $answer = '計算できません';
+        @endphp
     @endif
     <h1>計算アプリ</h1>
     <h3>{{ $answer }}</h3>
