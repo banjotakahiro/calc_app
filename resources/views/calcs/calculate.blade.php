@@ -13,7 +13,7 @@
         @endphp
     @elseif ($operator == 'subtraction')
         @php
-            $answer = $value_1 + $value_2;
+            $answer = $value_1 - $value_2;
         @endphp
     @elseif ($operator == 'multiplication')
         @php
@@ -22,6 +22,10 @@
     @elseif ($operator == 'division')
         @php
             $answer = $value_1 / $value_2;
+        @endphp
+    @else
+        @php
+            $answer = '計算できません';
         @endphp
     @endif
     <h1>計算アプリ</h1>
