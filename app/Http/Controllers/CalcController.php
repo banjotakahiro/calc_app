@@ -14,6 +14,6 @@ class CalcController extends Controller
         'value_2' => $value_2
         ];
 
-        return view('calc.calculate',$data);
+        return view('calcs.calculate',$data);
     }
 }
