@@ -13,16 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/calcs/{value_1}/{operator}/{value_2}', function ($value_1,$operator,$value_2) {
-    $data = [
-            'value_1' => $value_1,
-            'operator' => $operator,
-            'value_2' => $value_2
-            ];
-    return view('calc.calculate',$data);
-});
+// Route::get('/calcs/{value_1}/{operator}/{value_2}', function ($value_1,$operator,$value_2) {
+//     $data = [
+//             'value_1' => $value_1,
+//             'operator' => $operator,
+//             'value_2' => $value_2
+//             ];
+//     return view('calc.calculate',$data);
+// });
 
-Route::get('/calcs', function () {
+// Route::get('/calcs', function () {
 
-    return view();
-});
+//     return view();
+// });
+
+Route::get('/calcs/{value_1}/{operator}/{value_2}', [App\Http\Controllers\CalcController::class, 'result']);
